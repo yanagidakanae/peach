@@ -63,23 +63,23 @@
 
                 <div class="top">
                     <div class="item">
-                        <div class="card-inner">
-                            <div class="card-front">
+                        <div class="card-inner ">
+                            <div class="card-front infomation">
                                 <p>情報交換</p>
                             </div>
-                            <dl class="card-back">
-                                <dt>情報交換</dt>
+                            <dl class="card-back ">
+                                <dt>--情報交換--</dt>
                                 <dd>おすすめ教材・便利サイト・勉強法が知れる</dd>
                             </dl>
                         </div>
                     </div>
                     <div class=" item">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front motivation">
                                 <p>モチベUP</p>
                             </div>
                             <dl class="card-back">
-                                <dt>モチベUP</dt>
+                                <dt>--モチベUP--</dt>
                                 <dd>他の人が頑張っている姿が刺激になる！</dd>
                             </dl>
                         </div>
@@ -89,11 +89,11 @@
                 <div class="center">
                     <div class=" item">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front teammate">
                                 <p>仲間ができる</p>
                             </div>
                             <dl class="card-back">
-                                <dt>仲間ができる</dt>
+                                <dt>--仲間ができる--</dt>
                                 <dd>雑談やイベントを通じて自然と知り合いができる</dd>
                             </dl>
                         </div>
@@ -103,11 +103,11 @@
                     
                     <div class="item">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front advice">
                                 <p>お悩み相談</p>
                             </div>
-                            <dl class="card-back">
-                                <dt>お悩み相談</dt>
+                            <dl class="card-back ">
+                                <dt>--お悩み相談--</dt>
                                 <dd>技術的な疑問から進路の悩みまで話せる</dd>
                             </dl>
                         </div>
@@ -116,22 +116,22 @@
                 <div class="bottom">
                     <div class="item">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front defeat">
                                 <p>挫折しにくい</p>
                             </div>
-                            <dl class="card-back">
-                                <dt>挫折しにくい</dt>
+                            <dl class="card-back ">
+                                <dt>--挫折しにくい--</dt>
                                 <dd>習慣づけできて、自然と続けられる環境</dd>
                             </dl>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card-inner">
-                            <div class="card-front">
+                            <div class="card-front skill">
                                 <p>スキルアップ</p>
                             </div>
                             <dl class="card-back">
-                                <dt>スキルアップ</dt>
+                                <dt>--スキルアップ--</dt>
                                 <dd>質問やアウトプットを通じて、着実にステップアップ</dd>
                             </dl>
                         </div>
@@ -159,28 +159,28 @@
             </div>
 
         </section>
-        <div class="title">
-            <img src="img/backcolor.png">
-            <p>Q&A</p>
-        </div>
-
-        <section class="questions wrapper">
-            <div class="faq">
+        
+        <section class="questions ">
+            <div class="title">
+                <img src="img/backcolor.png">
+                <p>Q&A</p>
+            </div>
+            <div class="faq wrapper">
                 <dl>
-                    <dt class="question"><img src="img/question.png"> 完全初心者ですが、大丈夫ですか?</dt>
-                    <dd class="answer"><img src="img/anser.png">はい!初心者部屋があるので、安心して入ってきてください。</dd>
+                    <dt class="question"> <span>Q.</span>完全初心者ですが、大丈夫ですか? <span class="icon"></span></dt>
+                    <dd class="answer"><span>A.</span>はい!初心者部屋があるので、安心して入ってきてください。</dd>
                 </dl>
                 <dl>
-                    <dt class="question"><img src="img/question.png"> 利用できる時間帯はいつですか?</dt>
-                    <dd class="answer"><img src="img/anser.png">am5:00～翌1:00です。</dd>
+                    <dt class="question"><span>Q.</span>利用できる時間帯はいつですか?<span class="icon"></span></dt>
+                    <dd class="answer"><span>A.</span>am5:00～翌1:00です。</dd>
                 </dl>
                 <dl>
-                    <dt class="question"><img src="img/question.png"> 顔出し・話す必要はありますか?</dt>
-                    <dd class="answer"><img src="img/anser.png"> 顔出しなし・無言参加OKです。チャットでも会話できます。</dd>
+                    <dt class="question"> <span>Q.</span>顔出し・話す必要はありますか?<span class="icon"></span></dt>
+                    <dd class="answer"> <span>A.</span>顔出しなし・無言参加OKです。チャットでも会話できます。</dd>
                 </dl>
                 <dl>
-                    <dt class="question"><img src="img/question.png"> 参加費はかかりますか?</dt>
-                    <dd class="answer"><img src="img/anser.png">月額○○円頂戴しております。</dd>
+                    <dt class="question"><span>Q.</span> 参加費はかかりますか?<span class="icon"></span></dt>
+                    <dd class="answer"><span>A.</span>月額○○円頂戴しております。</dd>
                 </dl>
             </div>
         </section>
@@ -193,6 +193,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const title = document.querySelector(".top-title h1");
+    const text = title.textContent.trim();
+    title.innerHTML = "";
+
+    [...text].forEach((char, i) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.animationDelay = `${i * 0.05}s`; 
+      title.appendChild(span);
+    });
+  });
+</script>
+
 </body>
 
 </html>
