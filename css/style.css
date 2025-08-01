@@ -20,7 +20,7 @@ img {
 }
 
 .wrapper {
-    margin-inline: 3%;
+    padding-inline: 5%;
     max-width: 960px;
     margin: 0 auto;
 
@@ -90,6 +90,7 @@ img {
 }
 
 .title p {
+        font-size: clamp(14px, 2vw + 1rem, 24px);
     position: absolute;
     font-weight: bold;
     top: 50%;
@@ -410,11 +411,6 @@ footer p {
         width: 100%;
     }
 
-    .title p {
-        font-size: 14px;
-    }
-
-
     /* problem */
     .issue {
         flex-direction: column;
@@ -427,11 +423,8 @@ footer p {
     }
 
     .button a {
-        font-size: 14px;
-    }
-
-    .button a:hover {
         font-size: 16px;
+        padding-inline: 20px;
     }
 
     /* introduction */
