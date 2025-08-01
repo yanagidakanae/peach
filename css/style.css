@@ -276,8 +276,13 @@ img {
 /* event */
 .event {
     background-color: #BDD0F0;
-    border-top: 10px dotted white;
-    border-bottom: 10px dotted white;
+    padding-block: 30px;
+}
+
+.slick-list {
+    padding-block: 30px;
+    border-top: 5px dotted white;
+    border-bottom: 5px dotted white;
 }
 
 .slide-item {
@@ -298,6 +303,8 @@ img {
 }
 
 .slide-caption {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -315,6 +322,7 @@ img {
     padding: 30px;
     line-height: 2;
     text-align: left;
+    font-size: 20px;
 }
 
 .slide-caption:hover {
