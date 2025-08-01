@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>teampeach</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!-- プラグイン「slick」のcssを読み込む -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -100,7 +101,7 @@
                     </div>
 
                     <img src="img/meeting.png">
-                    
+
                     <div class="item">
                         <div class="card-inner">
                             <div class="card-front advice">
@@ -144,22 +145,41 @@
             <div class="slide-item">
                 <img src="img/consult.png">
                 <p>息詰まったときの相談<br>有益情報も!?</p>
+                <div class="slide-caption">
+                    <p>作業につまずいたり、進み方に迷ったときは、仲間に相談してみましょう。<br>
+                        初心者専用の部屋やProgateレベルからハイレベルなLT会まで、自分のペースで質問・相談できる環境が整っています。</p>
+                </div>
             </div>
             <div class="slide-item">
                 <img src="img/seminar.png">
                 <p>イベント参加者向け<br>セミナー</p>
+                <div class="slide-caption">
+                    <p>毎週月曜：特別セミナー <br>
+                        毎週木曜：初心者質問会<br>
+                        毎月：オンライン飲み会<br>
+                        不定期：ハッカソン</p>
+                </div>
             </div>
             <div class="slide-item">
                 <img src="img/talk.png">
                 <p>時には相談も</p>
+                <div class="slide-caption">
+                    <p>勉強や制作に関することはもちろん、モチベーションの維持や学習方法の悩みなど、
+                        ちょっとしたことでも気軽に話せる雰囲気です。 一人で抱え込まず、時には誰かと話すことで、心が軽くなることもあります。</p>
+                </div>
             </div>
             <div class="slide-item">
                 <img src="img/meeting-photo.png">
                 <p>顔を合わせて<br>お話することもできます</p>
+                <div class="slide-caption">
+                    <p>ビデオ機能を使用し会話も可能です。<br>
+                        「ちょっと相談したい」「顔を見て話せたら安心」というときにもぴったり。<br>
+                        話すのが苦手な方でも、聞くだけ参加OKなので、ご自身のペースで安心して関われます。</p>
+                </div>
             </div>
 
         </section>
-        
+
         <section class="questions ">
             <div class="title">
                 <img src="img/backcolor.png">
@@ -194,19 +214,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const title = document.querySelector(".top-title h1");
-    const text = title.textContent.trim();
-    title.innerHTML = "";
+        document.addEventListener("DOMContentLoaded", () => {
+            const title = document.querySelector(".top-title h1");
+            const text = title.textContent.trim();
+            title.innerHTML = "";
 
-    [...text].forEach((char, i) => {
-      const span = document.createElement("span");
-      span.textContent = char;
-      span.style.animationDelay = `${i * 0.05}s`; 
-      title.appendChild(span);
-    });
-  });
-</script>
+            [...text].forEach((char, i) => {
+                const span = document.createElement("span");
+                span.textContent = char;
+                span.style.animationDelay = `${i * 0.05}s`;
+                title.appendChild(span);
+            });
+        });
+    </script>
 
 </body>
 

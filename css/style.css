@@ -47,6 +47,7 @@ img {
 }
 
 .top-title h1 {
+    padding-inline: 20px;
     text-align: right;
     font-size: 40px;
     background-color: white;
@@ -90,7 +91,7 @@ img {
 }
 
 .title p {
-        font-size: clamp(14px, 2vw + 1rem, 24px);
+    font-size: clamp(14px, 2vw + 1rem, 24px);
     position: absolute;
     font-weight: bold;
     top: 50%;
@@ -281,6 +282,8 @@ img {
 
 .slide-item {
     padding: 60px 20px;
+
+    position: relative;
 }
 
 .slide-item img {
@@ -291,11 +294,35 @@ img {
     color: #0b8faa;
     text-align: center;
     font-weight: bold;
+    font-size: 16px;
 }
 
-.slide-item:hover{
-    opacity: 0.5;
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    opacity: 0;
+    transition: 0.5s;
+
 }
+
+.slide-caption p {
+    padding: 30px;
+    line-height: 2;
+    text-align: left;
+}
+
+.slide-caption:hover {
+    opacity: 1;
+}
+
+
+
 /* questions */
 .questions {
     margin-bottom: 120px;
@@ -331,47 +358,47 @@ dl span {
 }
 
 .question {
-  position: relative;
-  cursor: pointer;
-  padding-right: 30px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 30px;
 }
 
 .question .icon {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
 }
 
 .icon::before,
 .icon::after {
-  content: '';
-  position: absolute;
-  background-color: #0b8faa;
-  transition: transform 0.3s ease;
+    content: '';
+    position: absolute;
+    background-color: #0b8faa;
+    transition: transform 0.3s ease;
 }
 
 .icon::before {
-  width: 16px;
-  height: 2px;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+    width: 16px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .icon::after {
-  width: 2px;
-  height: 16px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) rotate(0deg);
-  transform-origin: center;
+    width: 2px;
+    height: 16px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: center;
 }
 
 .faq dl.active .icon::after {
-  transform: translateX(-50%) rotate(90deg);
+    transform: translateX(-50%) rotate(90deg);
 }
 
 
@@ -384,17 +411,24 @@ footer p {
 
 }
 
-@media(max-width:900px) {
+@media(max-width:1000px) {
     .title p {
         font-size: 18px;
     }
+
+    .slide-caption p {
+        padding: 20px;
+        font-size: 14px;
+    }
+
 }
 
 @media(max-width:700px) {
 
     /* main-top */
     .top-title {
-        left: 0;
+        left: 5%;
+        transform: translateY(-50%);
     }
 
     .top-title h1 {
@@ -409,6 +443,10 @@ footer p {
     /*sab-title  */
     .title {
         width: 100%;
+    }
+
+    .title p {
+        font-size: 18px;
     }
 
     /* problem */
@@ -454,4 +492,20 @@ footer p {
     .faq {
         grid-template-columns: 1fr;
     }
+
+    .slide-caption {
+        width: 90%;
+        height: 80%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .slide-caption p {
+        padding: 20px;
+    }
+
 }
